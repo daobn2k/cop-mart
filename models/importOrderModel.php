@@ -15,7 +15,8 @@ class ImportOrder
 	}
 	public function CreateNew($user){
 		include './database/db_connect.php';
-		$result = mysqli_query($conn,"INSERT INTO importorder (user) VALUES ('".$user."')");
+		$dateCreated = date("Y-m-d H:i:s");
+		$result = mysqli_query($conn,"INSERT INTO importorder (user,dateCreated) VALUES ('".$user."','".$dateCreated."')");
 	}
 	public function DeleteOrder($id){
 			include './database/db_connect.php';
