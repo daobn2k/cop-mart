@@ -25,3 +25,8 @@ function Result($sql){
 
     return $list;
 }
+
+
+function showMessage($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
