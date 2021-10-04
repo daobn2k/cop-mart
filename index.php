@@ -1,9 +1,6 @@
 <?php
 session_start(); 
 include_once './controllers/signin.php'; 
-if(isset($_SESSION['username'])){
-	header('Location: home.php');
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
