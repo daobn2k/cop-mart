@@ -14,6 +14,12 @@
 			return $count;
 			mysqli_close($conn);
 		}
+		public function UserByUsername($username){
+			include_once './database/db_connect.php';
+			$result = mysqli_query($conn,"SELECT fullname FROM account WHERE username='" . $username . "'");
+			return $result;
+			mysqli_close($conn);
+		}
 	}
 	//model login
 ?>
