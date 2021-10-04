@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once './database/db_connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -194,7 +193,7 @@ include_once './database/db_connect.php';
 						<div class="dropdown-menu dropdown-menu-right profile-notification">
 							<div class="pro-head">
 								<img src="./assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
-								<span><?php echo $_SESSION['fullname']; ?></span>
+								<span><?php echo $_SESSION['username']; ?></span>
 								<a href="./controllers/signout.php" class="dud-logout" title="Logout">
 									<i class="feather icon-log-out"></i>
 								</a>
