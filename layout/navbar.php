@@ -58,6 +58,14 @@ require_once('../database/db_global.php');
 					<li class="nav-item">
 						<a href="/cop-mart/supplier.php" class="nav-link"><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Nhà cung cấp</span></a>
 					</li>
+					<li class="nav-item pcoded-hasmenu">
+						<a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Đơn hàng</span></a>
+						<ul class="pcoded-submenu">
+						<li class="">	<a href="/cop-mart/viewCustomer/listCustomer.php" class="nav-link"><span class="pcoded-micon"><i class="fas fa-users"></i></span><span class="pcoded-mtext">Quản lý khách hàng</span></a></li>
+						<li class="">	<a href="/cop-mart/viewCustomerRole/listrole.php" class="nav-link"><span class="pcoded-micon"><i class="fas fa-users"></i></span><span class="pcoded-mtext">Quản lý loại tài khoản</span></a></li>
+
+						</ul>
+					</li>
                     <li class="nav-item">
 						<a href="/cop-mart/viewCustomer/listCustomer.php" class="nav-link"><span class="pcoded-micon"><i class="fas fa-users"></i></span><span class="pcoded-mtext">Quản lý khách hàng</span></a>
 					</li>
