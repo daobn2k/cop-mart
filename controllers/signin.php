@@ -7,7 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   	$count = $login->LoginValidation($username,$password);
 	if($count>0) {
 		$_SESSION['username'] = $username;
-		$_SESSION['password'] = $password;
+		$fullname = $login-> UserByUsername($username);
+		$_SESSION['fullname'] = $fullname;
 		header('Location: home.php');
 	}
 	else{

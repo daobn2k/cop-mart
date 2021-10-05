@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once './database/db_connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +57,7 @@ include_once './database/db_connect.php';
 						<a href="home.php" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></i></span><span class="pcoded-mtext">Màn hình chính</span></a>
 					</li>
 					<li class="nav-item">
-						<a href="NewProduct.php" class="nav-link"><span class="pcoded-micon"><i class="feather icon-cpu"></i></span><span class="pcoded-mtext">Sản phẩm</span></a>
+						<a href="product.php" class="nav-link"><span class="pcoded-micon"><i class="feather icon-cpu"></i></span><span class="pcoded-mtext">Sản phẩm</span></a>
 					</li>
 					<li class="nav-item">
 						<a href="supplier.php" class="nav-link"><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Nhà cung cấp</span></a>
